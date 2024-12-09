@@ -46,24 +46,25 @@
 
         .links a {
             text-decoration: none;
-            font-size: 13px;
+            font-size: 15px;
             font-weight: bold;
             color: #fff;
             padding: 10px 20px;
             border: 2px solid;
             border-image-slice: 1;
-            border-image-source: linear-gradient(45deg, #800080, #800080);
-            background: linear-gradient(45deg, #800080, #800080);
+            border-image-source: linear-gradient(45deg, #ffffff, #800080);
+            background: linear-gradient(45deg, #ffffff, #ffffff);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             text-align: center;
             transition: all 0.3s ease;
             border-radius: 25px;
+            
         }
 
         .links a:hover {
-            background: linear-gradient(45deg, #800080, #800080);
+            background: linear-gradient(45deg, #800080, #ffffff);
             color: #000;
             border-color: transparent;
             box-shadow: 0 0 20px #800080, 0 0 40px #800080;
@@ -77,7 +78,7 @@
         }
 
         footer p {
-            font-size: 11px;
+            font-size: 13px;
         }
 
         /* Media Query para dispositivos móveis */
@@ -118,15 +119,8 @@
             }
 
             footer p {
-                font-size: 9px;
+                font-size: 10px;
             }
-        }
-
-        .icons {
-            padding: 20px;
-            font-size: 15px;
-            margin-top: 5px;
-            margin-bottom: 10px;
         }
 
         .footer {
@@ -138,21 +132,20 @@
     <div class="profile">
         <img src="images/pic.webp" alt="Profile Picture">
         <h2>Luan Oliveira</h2>
-        <h5>Especialista em Front-end! &#x1F60E;</h5>
+        <h5>Desenvolvedor Web e Técnico de Informática</h5>
+        <h5>Vamos fazer um projeto juntos? &#x1F60E;</h5>
     </div>
     <div class="links">
-        <a href="https://www.instagram.com/iluanoliveiraa" target="_blank">Instagram</a>
-        <a href="seusite" target="_blank">Portifólio</a>
-        <a href="https://github.com/luanoliveiralab" target="_blank">GitHub</a>
-        <a href="https://wa.me/5511930522075" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/iluanoliveiraa" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="seusite" target="_blank"><i class="fa-solid fa-code"></i> Portifólio</a>
+        <a href="https://github.com/luanoliveiralab" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://wa.me/5511930522075" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
     </div>
-    <div class="icons">
+    <footer class="footer">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-solid fa-code"></i>
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-whatsapp"></i>
-    </div>
-    <footer class="footer">
         <p>&copy; <span id="year"></span> Luan Oliveira. Todos os direitos reservados.</p>
     </footer> 
     <script>
