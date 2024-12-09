@@ -6,7 +6,6 @@
     <title>Dev Luan Oliveira</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Estilo base para evitar overflow */
         body {
             margin: 0;
             padding: 0;
@@ -17,20 +16,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo a altura da tela */
             text-align: center;
-            overflow-x: hidden; /* Impede o overflow horizontal */
+            overflow-x: hidden;
         }
 
         *,
         *::before,
         *::after {
-            box-sizing: border-box; /* Garante o box-sizing correto */
+            box-sizing: border-box;
         }
 
         .profile {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .profile img {
@@ -43,13 +42,13 @@
         }
 
         .links {
-            margin-top: 5px;
+            margin-top: 10px;
             display: flex;
             flex-direction: column;
             gap: 15px;
             width: 100%;
             max-width: 350px;
-            padding: 0 15px; /* Adiciona espaço interno */
+            padding: 0 15px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -82,8 +81,9 @@
         }
 
         footer {
-            margin-top: 15px;
+            margin-top: auto; /* Garante que o footer fique ao final da tela */
             color: #fff;
+            padding: 10px;
         }
 
         footer p {
@@ -99,7 +99,7 @@
 
             .links {
                 width: 100%;
-                padding: 0 10px; /* Ajuste extra para espaço interno */
+                padding: 0 10px;
             }
 
             .links a {
@@ -133,10 +133,6 @@
                 font-size: 10px;
             }
         }
-
-        .footer {
-            padding: 20px;
-        }
     </style>
 </head>
 <body>
@@ -148,7 +144,7 @@
     </div>
     <div class="links">
         <a href="https://www.instagram.com/iluanoliveiraa" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        <a href="seusite" target="_blank"><i class="fa-solid fa-code"></i> Portifólio</a>
+        <a href="seusite" target="_blank"><i class="fa-solid fa-code"></i> Portfólio</a>
         <a href="https://github.com/luanoliveiralab" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
         <a href="https://wa.me/5511930522075" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
         <h4>Instagram da minha loja de Informática <i class="fa-solid fa-tag"></i></h4>
