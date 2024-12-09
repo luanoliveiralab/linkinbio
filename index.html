@@ -6,8 +6,10 @@
     <title>Dev Luan Oliveira</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
+        /* Estilo base para evitar overflow */
         body {
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(#000, #270b27, #3d013d, #000);
             color: #fff;
@@ -17,6 +19,13 @@
             justify-content: center;
             height: 100vh;
             text-align: center;
+            overflow-x: hidden; /* Impede o overflow horizontal */
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box; /* Garante o box-sizing correto */
         }
 
         .profile {
@@ -25,10 +34,10 @@
         }
 
         .profile img {
-            width: 20vw; /* Tamanho responsivo da imagem */
-            height: 20vw; /* Proporcional à largura */
-            max-width: 120px; /* Limita a largura máxima */
-            max-height: 120px; /* Limita a altura máxima */
+            width: 20vw;
+            height: 20vw;
+            max-width: 120px;
+            max-height: 120px;
             border-radius: 50%;
             box-shadow: 0 0 15px #800080, 0 0 30px #800080;
         }
@@ -38,8 +47,9 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-            width: 60%; /* Ajusta a largura da área dos links */
+            width: 100%;
             max-width: 350px;
+            padding: 0 15px; /* Adiciona espaço interno */
             margin-left: auto;
             margin-right: auto;
         }
@@ -60,7 +70,6 @@
             text-align: center;
             transition: all 0.3s ease;
             border-radius: 25px;
-            
         }
 
         .links a:hover {
@@ -73,7 +82,7 @@
         }
 
         footer {
-            margin-top: 5px;
+            margin-top: 15px;
             color: #fff;
         }
 
@@ -89,7 +98,8 @@
             }
 
             .links {
-                width: 70%; /* Aumenta a largura para dispositivos maiores */
+                width: 100%;
+                padding: 0 10px; /* Ajuste extra para espaço interno */
             }
 
             .links a {
@@ -110,7 +120,8 @@
             }
 
             .links {
-                width: 80%;
+                width: 100%;
+                padding: 0 10px;
             }
 
             .links a {
